@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tile showroom</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="k1.js"></script>
+  <script>      
+document.querySelectorAll('.navbar a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Back to top button functionality
+const topButton = document.querySelector('.top');
+
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        topButton.style.display = "block";
+    } else {
+        topButton.style.display = "none";
+    }
+}
+
+topButton.addEventListener('click', function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+});
+
+
+</script>
+</head>
+<body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar1">
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+          </label>
+          <ul class="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#collection">Collections</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      </div>
+      </nav>  
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>ஓம் முருகா டைல்ஸ்</h1><br><br>
+            <p>Quality Tiles for Stylish Living</p>
+        </div>
+    </section>
+      <section class="tranding" id="collection"> 
+        <div class="container" id="skill">
+          <h1 class="sub-title" >Collection</h1>
+          <div class="service-list">
+            <div>
+              <h2>Pujai Room</h2> 
+              <section class="container1">            
+                <img src="p1.jpeg" alt="">
+                <img src="p2.jpeg" alt="">
+                <img src="p3.jpeg" alt="">
+                <img src="p4.jpeg" alt="">
+                <img src="p5.jpeg" alt="">
+                <img src="p6.jpeg" alt=""> 
+              </section>   
+            </div> 
+            <div>
+              <h2>Bedroom</h2>
+              <section class="container1">
+                <img src="ba1.jpeg" alt="">
+                <img src="ba2.jpeg" alt="">
+                <img src="ba3.jpeg" alt="">
+                <img src="ba4.jpeg" alt="">
+                <img src="ba5.jpeg" alt="">
+                <img src="ba6.jpeg" alt="">
+                <img src="ba7.jpeg" alt="">
+              </section>
+            </div> 
+            <div>
+              <h2>Kitchen</h2>
+              <section class="container1">
+                  <img src="k1.jpeg" alt="">
+                  <img src="k2.jpeg" alt="">
+                  <img src="k3.jpeg" alt="">
+                  <img src="k4.jpeg" alt="">
+                  <img src="k5.jpeg" alt="">
+                  <img src="k6.jpeg" alt="">
+                  <img src="k7.jpeg" alt="">
+                  <img src="k8.jpeg" alt="">
+              </section>
+            </div>
+            <div>
+              <h2>Hall</h2>
+              <section class="container1">
+                  <img src="h1.jpeg" alt="">
+                  <img src="h2.jpeg" alt="">
+                  <img src="h3.jpeg" alt="">
+                  <img src="h4.jpeg" alt="">
+                  <img src="h5.jpeg" alt="">
+                  <img src="h6.jpeg" alt="">
+                  <img src="h7.jpeg" alt="">
+              </section>
+            </div>
+            <div>
+              <h2>Bathroom</h2>
+              <section class="container1">
+                  <img src="b1.jpeg" alt="">
+                  <img src="b2.jpeg" alt="">
+                  <img src="b3.jpeg" alt="">
+                  <img src="b4.jpeg" alt="">
+                  <img src="b5.jpeg" alt="">
+                  <img src="b6.jpeg" alt="">
+                  <img src="b7.jpeg" alt="">
+              </section>
+            </div>
+            <div>
+              <h2>Porch</h2>
+              <section class="container1">
+                  <img src="po1.jpeg" alt="">
+                  <img src="po2.jpeg" alt="">
+                  <img src="po3.jpeg" alt="">
+                  <img src="po4.jpeg" alt="">
+                  <img src="po5.jpeg" alt="">
+                  <img src="po6.jpeg" alt="">
+                  <img src="po7.jpeg" alt="">
+                  <img src="po8.jpeg" alt="">
+                  <img src="po9.jpeg" alt="">
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        
+        <div class="about">
+          <h1 class="about">About </h1><br><br>
+        <p>The Tile Shop Holdings, Inc. operates as a specialty retailer of manufactured and natural stone tiles, setting and maintenance materials, and related accessories. The Company offers porcelain, glass, ceramic, travertine, and other natural stones. Tile Shop Holdings serves customers in the United States</p>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h1 class="contact-1">Contact</h1><br><br>
+        <div class="contact-item">
+          <h3><i class='bx bxs-map-pin' style="color: red;" ></i><br>482/2,kunnathur Rd-Perundurai,Perundurai,TamilNadu 638 052</h3><br><br>
+          <h3><i class='bx bxs-phone-call' style="color: green;"></i><br>+91 9876543210, +91 9786543210</h3><br><br>
+          <h4><i class='bx bxs-time' style="color: white;"></i><br>Closes 8.30pm</h4>
+        </div>
+        <div class="contact-sci"> 
+          <a href="#" style="--i:7"><i class='bx bxl-facebook-circle'></i></a>
+          <a href="#" style="--i:8"><i class='bx bxl-instagram'></i></a>
+          <a href="#" style="--i:9" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+          <a href="#" style="--i:10" target="_blank"><i class='bx bx-map'></i></a>     
+      </div>
+      </section>
+      <div class="last-text">
+        <p>development by &copy; karthikeyan  </p>
+    </div>
+    <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+   
+  </body>
+</html> 
